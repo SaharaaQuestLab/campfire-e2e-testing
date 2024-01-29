@@ -1,29 +1,34 @@
 // const { get } = require("cypress/types/lodash");
 
-function login() {
-    const userAddress = Cypress.env('userAddressRe');
-    const privateKey = Cypress.env('privateKeyRe');
-    cy.visit(`&userAddress=${userAddress}&privateKey=${privateKey}&userRole=5`);
-    cy.get('.test-login').click();
-    cy.url().should('include', '/requester/dashboard') 
-}
+// function login() {
+//     const userAddress = Cypress.env('userAddressRe');
+//     const privateKey = Cypress.env('privateKeyRe');
+//     cy.visit(`&userAddress=${userAddress}&privateKey=${privateKey}&userRole=5`);
+//     cy.get('.test-login').click();
+//     cy.url().should('include', '/requester/dashboard') 
+// }
 
-describe('新建项目',()=>{
+
+import loginModule from './login.cy.js';
+
+const { login } = loginModule;
+
+describe('新建项目', () => {
     it('进入信息填写页', () => {
-        login();
+        login(5, 0);
         cy.visit("#/requester/dashboard")
         cy.get('.w-\\[360px\\] > .sa-btn').click()
         cy.url().should('include', '/project/edit')
         cy.get('.mt-\\[15px\\]').should('include.text', 'Project intake form');
     });
-})
+});
 
 // 新建项目_第一步
 describe('输入项目信息',()=>{
     const randomValue = Math.floor(Math.random() * 10000);
     const inputText = `TTTESCT${randomValue}`;
     it('创建成功', () => {
-        login();
+        login(5, 0);
         cy.visit('#/requester/project/edit')
         // 输入项目名称
         cy.get('#name').type(inputText);
