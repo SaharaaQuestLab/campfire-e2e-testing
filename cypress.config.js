@@ -8,40 +8,30 @@ module.exports = defineConfig({
 	},
 	env: {
 		nm1: {
-			"userAddress": "0x21c20Ab4894A01672ffC2788cb0Ef78100483CF1",
-			"privateKey": "cd43799b8e96c974fc1797e18d1cccd9ff8420a10b01f3eced850dea3a788bd1",
+			"userAddress": "0x768Fe877d814f0bdEe3405011BEAa50d5b8058e2",
+			"privateKey": "f6e1a8a806562a087956d25c8dbe3f5251d5e5221f4ad039c9f5534e263514fa",
 			"userRole": 6
 		},
 		labeler1: {
-			"userAddress": "0xc85b17D1CCd7DD587279B41502B166b9F0b0C956",
-			"privateKey": "d815b1f88e299e585788d4ddaba08798317aa186dee27b6fe8b10977436703cd",
+			"userAddress": "0xC381d175C04e827b278CEE89F1B7B619037D953f",
+			"privateKey": "d44d417dc02b333aaf863d0c9ecab96261c91b2ca5ccdd0a8c1f317ccebfc7c8",
 			"userRole": 1
 		},
 		requester: {
-			"userAddress": "0x19745FE4980D6f0EE28bdD0a328f16CAE21c9B13",
-			"privateKey": "5ce7a39ead8cac34ca78b830ec3c1e5efeadf0880aaa926cd1cbbfab64390fdb",
+			"userAddress": "0x0d184B1BF603a6E909E1f008185F6b7606e7EC9a",
+			"privateKey": "d01fdef25661391a7209ad9d2b0af0155861a76aad1fa90f801fe86bc0fcba17",
 			"userRole": 5
 		},
 		am: {
-			"userAddress": "0x496A5C061fF014b458fAc9383D03A0FD528468f0",
-			"privateKey": "9cb1773b7da8a3845a320a78f37907cd9d350b1c5e28cef7b95944d9315109e6",
+			"userAddress": "0x4CCE6c3386d015fd99cbcb16054ed73D19960032",
+			"privateKey": "4d8cadf6056ae185f3ba3e12ff86add4c2885485c2b308a0064ab21bc28f219f",
 			"userRole": 2
 		},
 		qm: {
 			"userAddress": "0x19745FE4980D6f0EE28bdD0a328f16CAE21c9B13",
 			"privateKey": "",
-			"userRole": 5
+			"userRole": 4
 		},
-		"NmAddress": "0xF99B163A328E030ed65e14Fe33582EEbeFb1FAf9",
-		"NmprivateKey": "4b3d242b106be3d7f170851990aa7f96d2b413cd0562fee5eefc670bea27e0fb",
-		"ReAddress": "0x19745FE4980D6f0EE28bdD0a328f16CAE21c9B13",
-		"ReprivateKey": "5ce7a39ead8cac34ca78b830ec3c1e5efeadf0880aaa926cd1cbbfab64390fdb",
-		"AmAddress": "0x496A5C061fF014b458fAc9383D03A0FD528468f0",
-		"AmprivateKey": "9cb1773b7da8a3845a320a78f37907cd9d350b1c5e28cef7b95944d9315109e6",
-		"QmAddress": "0xd998A8F5B717e6deef43170dDf45e8236B4e225e",
-		"QmprivateKey": "896e0eb688244e9cc3c3a1262e884058e4f331b1011817de556de2b7ed7bc242",
-		"labberAddress": "0xc85b17D1CCd7DD587279B41502B166b9F0b0C956",
-		"labberprivateKey": "d815b1f88e299e585788d4ddaba08798317aa186dee27b6fe8b10977436703cd"
 	}
 });
 
